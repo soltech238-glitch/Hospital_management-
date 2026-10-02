@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Management System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="toast" class="toast"></div>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">✚</div>
+        <div>
+          <div class="brand-title">Hospital</div>
+          <div class="brand-sub">Management System</div>
+        </div>
+      </div>
+      <nav class="nav" id="mainNav">
+        <button class="nav-item active" data-page="dashboard"><span>⌂</span> Dashboard</button>
+        <button class="nav-item" data-page="patients"><span>♙</span> Patient Information</button>
+        <button class="nav-item" data-page="doctors"><span>⚕</span> Doctor Information</button>
+        <button class="nav-item" data-page="appointments"><span>▣</span> Appointments</button>
+        <button class="nav-item" data-page="medicines"><span>✚</span> Medicine Details</button>
+        <button class="nav-item" data-page="laboratory"><span>⌬</span> Laboratory</button>
+        <button class="nav-item" data-page="beds"><span>▤</span> IPD / Bed Management</button>
+        <button class="nav-item" data-page="billing"><span>₹</span> Billing</button>
+        <button class="nav-item" data-page="search"><span>⌕</span> Search Patient</button>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="care-line">♥</div>
+        <div>Better Care</div>
+        <small>for a Healthier Tomorrow</small>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="menu-btn" id="menuBtn">☰</button>
+        <div>
+          <div class="eyebrow">Hospital Administration</div>
+          <h1 id="pageTitle">Dashboard</h1>
+        </div>
+        <div class="top-actions">
+          <div class="live"><span></span> System Online</div>
+          <div class="clock" id="clock"></div>
+          <div class="profile">A</div>
+        </div>
+      </header>
+      <section class="content" id="content"></section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>\n  <script src="app.js"></script>
+</body>
+</html>
